@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B4483B452C7A6EC400C56F43 /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483B442C7A6EC400C56F43 /* Subject.swift */; };
+		B4483B482C7A6F3400C56F43 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483B472C7A6F3400C56F43 /* Course.swift */; };
+		B4483B4A2C7A6F3900C56F43 /* Teacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483B492C7A6F3900C56F43 /* Teacher.swift */; };
+		B4483B4C2C7A6F4000C56F43 /* TeacherAssistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483B4B2C7A6F4000C56F43 /* TeacherAssistance.swift */; };
+		B4483B4E2C7A6F4800C56F43 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483B4D2C7A6F4800C56F43 /* Student.swift */; };
+		B4483B502C7A6F5100C56F43 /* AccountType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483B4F2C7A6F5100C56F43 /* AccountType.swift */; };
+		B4483B532C7A70A300C56F43 /* Gradeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483B522C7A70A300C56F43 /* Gradeable.swift */; };
+		B4483B552C7A714400C56F43 /* Grade.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483B542C7A714400C56F43 /* Grade.swift */; };
+		B4483B592C7A725800C56F43 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483B582C7A725800C56F43 /* Session.swift */; };
+		B4483B5B2C7A72A700C56F43 /* GradeCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483B5A2C7A72A700C56F43 /* GradeCalculator.swift */; };
+		B4483B5D2C7A730E00C56F43 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483B5C2C7A730E00C56F43 /* Int+Extension.swift */; };
 		B46F861E2C7A5ACD004F66D8 /* EduManagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46F861D2C7A5ACD004F66D8 /* EduManagerApp.swift */; };
 		B46F86202C7A5ACD004F66D8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46F861F2C7A5ACD004F66D8 /* ContentView.swift */; };
 		B46F86222C7A5ACF004F66D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B46F86212C7A5ACF004F66D8 /* Assets.xcassets */; };
@@ -34,6 +45,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B4483B442C7A6EC400C56F43 /* Subject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
+		B4483B472C7A6F3400C56F43 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		B4483B492C7A6F3900C56F43 /* Teacher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teacher.swift; sourceTree = "<group>"; };
+		B4483B4B2C7A6F4000C56F43 /* TeacherAssistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherAssistance.swift; sourceTree = "<group>"; };
+		B4483B4D2C7A6F4800C56F43 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		B4483B4F2C7A6F5100C56F43 /* AccountType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountType.swift; sourceTree = "<group>"; };
+		B4483B522C7A70A300C56F43 /* Gradeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradeable.swift; sourceTree = "<group>"; };
+		B4483B542C7A714400C56F43 /* Grade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grade.swift; sourceTree = "<group>"; };
+		B4483B582C7A725800C56F43 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		B4483B5A2C7A72A700C56F43 /* GradeCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeCalculator.swift; sourceTree = "<group>"; };
+		B4483B5C2C7A730E00C56F43 /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
 		B46F861A2C7A5ACD004F66D8 /* EduManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EduManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B46F861D2C7A5ACD004F66D8 /* EduManagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EduManagerApp.swift; sourceTree = "<group>"; };
 		B46F861F2C7A5ACD004F66D8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -74,6 +96,9 @@
 		B4483B3C2C7A6DF900C56F43 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				B4483B432C7A6EB500C56F43 /* Repository */,
+				B4483B422C7A6EB100C56F43 /* UseCase */,
+				B4483B412C7A6EAB00C56F43 /* Entities */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -95,6 +120,8 @@
 		B4483B3F2C7A6E1700C56F43 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				B4483B5A2C7A72A700C56F43 /* GradeCalculator.swift */,
+				B4483B5C2C7A730E00C56F43 /* Int+Extension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -104,6 +131,60 @@
 			children = (
 			);
 			path = Cores;
+			sourceTree = "<group>";
+		};
+		B4483B412C7A6EAB00C56F43 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				B4483B572C7A724E00C56F43 /* Session */,
+				B4483B562C7A724400C56F43 /* DataEntities */,
+				B4483B512C7A709B00C56F43 /* Protocol */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		B4483B422C7A6EB100C56F43 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		B4483B432C7A6EB500C56F43 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		B4483B512C7A709B00C56F43 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				B4483B522C7A70A300C56F43 /* Gradeable.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		B4483B562C7A724400C56F43 /* DataEntities */ = {
+			isa = PBXGroup;
+			children = (
+				B4483B442C7A6EC400C56F43 /* Subject.swift */,
+				B4483B472C7A6F3400C56F43 /* Course.swift */,
+				B4483B492C7A6F3900C56F43 /* Teacher.swift */,
+				B4483B4B2C7A6F4000C56F43 /* TeacherAssistance.swift */,
+				B4483B4D2C7A6F4800C56F43 /* Student.swift */,
+				B4483B4F2C7A6F5100C56F43 /* AccountType.swift */,
+				B4483B542C7A714400C56F43 /* Grade.swift */,
+			);
+			path = DataEntities;
+			sourceTree = "<group>";
+		};
+		B4483B572C7A724E00C56F43 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				B4483B582C7A725800C56F43 /* Session.swift */,
+			);
+			path = Session;
 			sourceTree = "<group>";
 		};
 		B46F86112C7A5ACD004F66D8 = {
@@ -297,7 +378,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4483B482C7A6F3400C56F43 /* Course.swift in Sources */,
+				B4483B5B2C7A72A700C56F43 /* GradeCalculator.swift in Sources */,
+				B4483B4A2C7A6F3900C56F43 /* Teacher.swift in Sources */,
+				B4483B4C2C7A6F4000C56F43 /* TeacherAssistance.swift in Sources */,
+				B4483B552C7A714400C56F43 /* Grade.swift in Sources */,
+				B4483B532C7A70A300C56F43 /* Gradeable.swift in Sources */,
+				B4483B502C7A6F5100C56F43 /* AccountType.swift in Sources */,
+				B4483B452C7A6EC400C56F43 /* Subject.swift in Sources */,
+				B4483B5D2C7A730E00C56F43 /* Int+Extension.swift in Sources */,
+				B4483B592C7A725800C56F43 /* Session.swift in Sources */,
 				B46F86202C7A5ACD004F66D8 /* ContentView.swift in Sources */,
+				B4483B4E2C7A6F4800C56F43 /* Student.swift in Sources */,
 				B46F861E2C7A5ACD004F66D8 /* EduManagerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
