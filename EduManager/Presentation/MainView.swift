@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct MainView: View {
-    
+
     let dependencyFactory = MainDependencyFactory()
-    
+
     var body: some View {
         TabView {
             dashboardView()
@@ -19,34 +19,34 @@ struct MainView: View {
             moreview()
         }
     }
-    
+
     @ViewBuilder
     func dashboardView() -> some View {
-        Text("Dashboard")
+        let viewModel = dependencyFactory.makeDashboardViewModel()
+        DashboardView(viewModel: viewModel)
             .tabItem {
                 Label("Dashboard", systemImage: "newspaper.fill")
             }
-
     }
-    
+
     @ViewBuilder
     func calendarView() -> some View {
-        Text("Calendar")
+        let viewModel = dependencyFactory.makeCalendarViewModel()
+        CalendarView(viewModel: viewModel)
             .tabItem {
                 Label("Calendar", systemImage: "calendar")
             }
-            
     }
-    
+
     @ViewBuilder
     func notificationView() -> some View {
-        Text("Notification")
+        let viewModel = dependencyFactory.makeNotificationViewModel()
+        NotificationView(viewModel: viewModel)
             .tabItem {
                 Label("Notification", systemImage: "envelope.badge.fill")
             }
-
     }
-    
+
     @ViewBuilder
     func moreview() -> some View {
         let viewModel = dependencyFactory.makeMoreViewModel()

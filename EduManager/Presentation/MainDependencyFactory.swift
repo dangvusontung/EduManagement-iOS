@@ -19,4 +19,34 @@ struct MainDependencyFactory {
         return MoreViewModel(factory: factory)
 #endif
     }
+
+    func makeCalendarViewModel() -> CalendarViewModel {
+#if XCODE_RUNNING_FOR_PREVIEWS
+        let factory = PreviewCalendarUseCaseFactory()
+        return CalendarViewModel(factory: factory)
+#else
+        let factory = CalendarUseCaseFactoryImpl()
+        return CalendarViewModel(factory: factory)
+#endif
+    }
+
+    func makeDashboardViewModel() -> DashboardViewModel {
+#if XCODE_RUNNING_FOR_PREVIEWS
+        let factory = PreviewDashboardUseCaseFactory()
+        return DashboardViewModel(factory: factory)
+#else
+        let factory = DashboardUseCaseFactoryImpl()
+        return DashboardViewModel(factory: factory)
+#endif
+    }
+
+    func makeNotificationViewModel() -> NotificationViewModel {
+#if XCODE_RUNNING_FOR_PREVIEWS
+        let factory = PreviewNotificationUseCaseFactory()
+        return NotificationViewModel(factory: factory)
+#else
+        let factory = NotificationUseCaseFactoryImpl()
+        return NotificationViewModel(factory: factory)
+#endif
+    }
 }
