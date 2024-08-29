@@ -10,6 +10,7 @@ import Foundation
 struct Course {
     let name: String
     let startDate: Date
+    let subject: Subject
     let endDate: Date
     let teacher: Teacher 
     let assitances: [TeacherAssistance]

@@ -21,3 +21,4 @@
 .build/repositories/Alamofire-63cd6d99/objects/pack/pack-391e4a16945ad048844a50b33d52f5b87b914d1f.pack
 Package.resolved
 .vscode/settings.json
+*.xcbkptlist

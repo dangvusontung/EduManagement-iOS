@@ -9,9 +9,22 @@ import SwiftUI
 
 @main
 struct EduManagerApp: App {
+    
+    init() {
+        registerDependencies()
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
         }
+    }
+    
+    func registerDependencies() {
+        let container = DependencyContainer.shared
+        container.registerFactory(
+            ((any FetchUserUseCase).self, { FetchUserUseCaseImpl() })
+            
+        )
     }
 }

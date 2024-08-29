@@ -18,6 +18,30 @@
 		B4483B592C7A725800C56F43 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483B582C7A725800C56F43 /* Session.swift */; };
 		B4483B5B2C7A72A700C56F43 /* GradeCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483B5A2C7A72A700C56F43 /* GradeCalculator.swift */; };
 		B4483B5D2C7A730E00C56F43 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483B5C2C7A730E00C56F43 /* Int+Extension.swift */; };
+		B4483B5F2C7F6EB400C56F43 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483B5E2C7F6EB400C56F43 /* MainView.swift */; };
+		B4483B652C7F721F00C56F43 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483B642C7F721F00C56F43 /* User.swift */; };
+		B4483B672C7F741900C56F43 /* MoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483B662C7F741900C56F43 /* MoreView.swift */; };
+		B4483B692C7F742500C56F43 /* MoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483B682C7F742500C56F43 /* MoreViewModel.swift */; };
+		B4483B6C2C7F752400C56F43 /* FetchUserUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483B6B2C7F752400C56F43 /* FetchUserUseCase.swift */; };
+		B4483B712C7F79C900C56F43 /* MoreViewContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483B702C7F79C900C56F43 /* MoreViewContent.swift */; };
+		B4483B732C7F820E00C56F43 /* UserMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483B722C7F820E00C56F43 /* UserMenu.swift */; };
+		B4483B792C7F8B9500C56F43 /* NotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483B782C7F8B9500C56F43 /* NotificationViewModel.swift */; };
+		B4483B7B2C7F8B9F00C56F43 /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483B7A2C7F8B9F00C56F43 /* CalendarViewModel.swift */; };
+		B4483B7D2C7F8BCC00C56F43 /* GetNotificationUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483B7C2C7F8BCC00C56F43 /* GetNotificationUseCase.swift */; };
+		B4483B7F2C7F8BDA00C56F43 /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483B7E2C7F8BDA00C56F43 /* UseCase.swift */; };
+		B4483B812C7F8CD300C56F43 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483B802C7F8CD300C56F43 /* Notification.swift */; };
+		B4483B852C7F8D1D00C56F43 /* GetNotificationUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483B842C7F8D1D00C56F43 /* GetNotificationUseCaseImpl.swift */; };
+		B4483B882C7FB38900C56F43 /* FetchUserUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483B872C7FB38900C56F43 /* FetchUserUseCaseImpl.swift */; };
+		B4483B8B2C7FB45D00C56F43 /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483B8A2C7FB45D00C56F43 /* DependencyContainer.swift */; };
+		B4483B8D2C8050AD00C56F43 /* DIFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483B8C2C8050AD00C56F43 /* DIFactory.swift */; };
+		B4483B902C80534800C56F43 /* MoreUseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483B8F2C80534800C56F43 /* MoreUseCaseFactory.swift */; };
+		B4483B922C80540F00C56F43 /* MoreUseCaseFactoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483B912C80540F00C56F43 /* MoreUseCaseFactoryImpl.swift */; };
+		B4483B942C80541D00C56F43 /* MoreUseCaseFactoryPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483B932C80541D00C56F43 /* MoreUseCaseFactoryPreview.swift */; };
+		B4483B962C80548C00C56F43 /* FetchUserUseCasePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483B952C80548B00C56F43 /* FetchUserUseCasePreview.swift */; };
+		B4483B9A2C8057C600C56F43 /* LogOutUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483B992C8057C600C56F43 /* LogOutUseCase.swift */; };
+		B4483B9C2C8057D200C56F43 /* LogOutUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483B9B2C8057D200C56F43 /* LogOutUseCaseImpl.swift */; };
+		B4483B9E2C8057DD00C56F43 /* LogOutUseCasePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483B9D2C8057DD00C56F43 /* LogOutUseCasePreview.swift */; };
+		B4483BA02C80595B00C56F43 /* MainDependencyFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483B9F2C80595B00C56F43 /* MainDependencyFactory.swift */; };
 		B46F861E2C7A5ACD004F66D8 /* EduManagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46F861D2C7A5ACD004F66D8 /* EduManagerApp.swift */; };
 		B46F86202C7A5ACD004F66D8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46F861F2C7A5ACD004F66D8 /* ContentView.swift */; };
 		B46F86222C7A5ACF004F66D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B46F86212C7A5ACF004F66D8 /* Assets.xcassets */; };
@@ -56,6 +80,30 @@
 		B4483B582C7A725800C56F43 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		B4483B5A2C7A72A700C56F43 /* GradeCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeCalculator.swift; sourceTree = "<group>"; };
 		B4483B5C2C7A730E00C56F43 /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
+		B4483B5E2C7F6EB400C56F43 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		B4483B642C7F721F00C56F43 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B4483B662C7F741900C56F43 /* MoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreView.swift; sourceTree = "<group>"; };
+		B4483B682C7F742500C56F43 /* MoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewModel.swift; sourceTree = "<group>"; };
+		B4483B6B2C7F752400C56F43 /* FetchUserUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchUserUseCase.swift; sourceTree = "<group>"; };
+		B4483B702C7F79C900C56F43 /* MoreViewContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewContent.swift; sourceTree = "<group>"; };
+		B4483B722C7F820E00C56F43 /* UserMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMenu.swift; sourceTree = "<group>"; };
+		B4483B782C7F8B9500C56F43 /* NotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewModel.swift; sourceTree = "<group>"; };
+		B4483B7A2C7F8B9F00C56F43 /* CalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
+		B4483B7C2C7F8BCC00C56F43 /* GetNotificationUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetNotificationUseCase.swift; sourceTree = "<group>"; };
+		B4483B7E2C7F8BDA00C56F43 /* UseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
+		B4483B802C7F8CD300C56F43 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		B4483B842C7F8D1D00C56F43 /* GetNotificationUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetNotificationUseCaseImpl.swift; sourceTree = "<group>"; };
+		B4483B872C7FB38900C56F43 /* FetchUserUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchUserUseCaseImpl.swift; sourceTree = "<group>"; };
+		B4483B8A2C7FB45D00C56F43 /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
+		B4483B8C2C8050AD00C56F43 /* DIFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIFactory.swift; sourceTree = "<group>"; };
+		B4483B8F2C80534800C56F43 /* MoreUseCaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreUseCaseFactory.swift; sourceTree = "<group>"; };
+		B4483B912C80540F00C56F43 /* MoreUseCaseFactoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreUseCaseFactoryImpl.swift; sourceTree = "<group>"; };
+		B4483B932C80541D00C56F43 /* MoreUseCaseFactoryPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreUseCaseFactoryPreview.swift; sourceTree = "<group>"; };
+		B4483B952C80548B00C56F43 /* FetchUserUseCasePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchUserUseCasePreview.swift; sourceTree = "<group>"; };
+		B4483B992C8057C600C56F43 /* LogOutUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutUseCase.swift; sourceTree = "<group>"; };
+		B4483B9B2C8057D200C56F43 /* LogOutUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutUseCaseImpl.swift; sourceTree = "<group>"; };
+		B4483B9D2C8057DD00C56F43 /* LogOutUseCasePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutUseCasePreview.swift; sourceTree = "<group>"; };
+		B4483B9F2C80595B00C56F43 /* MainDependencyFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDependencyFactory.swift; sourceTree = "<group>"; };
 		B46F861A2C7A5ACD004F66D8 /* EduManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EduManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B46F861D2C7A5ACD004F66D8 /* EduManagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EduManagerApp.swift; sourceTree = "<group>"; };
 		B46F861F2C7A5ACD004F66D8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -106,6 +154,7 @@
 		B4483B3D2C7A6E0600C56F43 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				B4483B822C7F8D0B00C56F43 /* Repositories */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -113,6 +162,12 @@
 		B4483B3E2C7A6E0A00C56F43 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				B4483B632C7F721300C56F43 /* MoreView */,
+				B4483B622C7F720A00C56F43 /* Notification */,
+				B4483B612C7F720300C56F43 /* Calendar */,
+				B4483B602C7F71FD00C56F43 /* Dashboard */,
+				B4483B5E2C7F6EB400C56F43 /* MainView.swift */,
+				B4483B9F2C80595B00C56F43 /* MainDependencyFactory.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -129,6 +184,9 @@
 		B4483B402C7A6E1D00C56F43 /* Cores */ = {
 			isa = PBXGroup;
 			children = (
+				B4483B7E2C7F8BDA00C56F43 /* UseCase.swift */,
+				B4483B8A2C7FB45D00C56F43 /* DependencyContainer.swift */,
+				B4483B8C2C8050AD00C56F43 /* DIFactory.swift */,
 			);
 			path = Cores;
 			sourceTree = "<group>";
@@ -146,6 +204,10 @@
 		B4483B422C7A6EB100C56F43 /* UseCase */ = {
 			isa = PBXGroup;
 			children = (
+				B4483B762C7F8B6500C56F43 /* Dashboard */,
+				B4483B752C7F8B3700C56F43 /* Course */,
+				B4483B742C7F8B3100C56F43 /* Notification */,
+				B4483B6A2C7F751B00C56F43 /* User */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -175,6 +237,9 @@
 				B4483B4D2C7A6F4800C56F43 /* Student.swift */,
 				B4483B4F2C7A6F5100C56F43 /* AccountType.swift */,
 				B4483B542C7A714400C56F43 /* Grade.swift */,
+				B4483B642C7F721F00C56F43 /* User.swift */,
+				B4483B722C7F820E00C56F43 /* UserMenu.swift */,
+				B4483B802C7F8CD300C56F43 /* Notification.swift */,
 			);
 			path = DataEntities;
 			sourceTree = "<group>";
@@ -185,6 +250,133 @@
 				B4483B582C7A725800C56F43 /* Session.swift */,
 			);
 			path = Session;
+			sourceTree = "<group>";
+		};
+		B4483B602C7F71FD00C56F43 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		B4483B612C7F720300C56F43 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				B4483B7A2C7F8B9F00C56F43 /* CalendarViewModel.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		B4483B622C7F720A00C56F43 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				B4483B782C7F8B9500C56F43 /* NotificationViewModel.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		B4483B632C7F721300C56F43 /* MoreView */ = {
+			isa = PBXGroup;
+			children = (
+				B4483B8E2C80533D00C56F43 /* Factory */,
+				B4483B6D2C7F792000C56F43 /* Components */,
+				B4483B662C7F741900C56F43 /* MoreView.swift */,
+				B4483B682C7F742500C56F43 /* MoreViewModel.swift */,
+			);
+			path = MoreView;
+			sourceTree = "<group>";
+		};
+		B4483B6A2C7F751B00C56F43 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				B4483B982C8057B400C56F43 /* LogOut */,
+				B4483B972C8057AC00C56F43 /* Fetch */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		B4483B6D2C7F792000C56F43 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B4483B702C7F79C900C56F43 /* MoreViewContent.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B4483B742C7F8B3100C56F43 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				B4483B842C7F8D1D00C56F43 /* GetNotificationUseCaseImpl.swift */,
+				B4483B7C2C7F8BCC00C56F43 /* GetNotificationUseCase.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		B4483B752C7F8B3700C56F43 /* Course */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Course;
+			sourceTree = "<group>";
+		};
+		B4483B762C7F8B6500C56F43 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		B4483B822C7F8D0B00C56F43 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				B4483B862C7F8DE500C56F43 /* User */,
+				B4483B832C7F8D1300C56F43 /* Notification */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		B4483B832C7F8D1300C56F43 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		B4483B862C7F8DE500C56F43 /* User */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		B4483B8E2C80533D00C56F43 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				B4483B8F2C80534800C56F43 /* MoreUseCaseFactory.swift */,
+				B4483B912C80540F00C56F43 /* MoreUseCaseFactoryImpl.swift */,
+				B4483B932C80541D00C56F43 /* MoreUseCaseFactoryPreview.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		B4483B972C8057AC00C56F43 /* Fetch */ = {
+			isa = PBXGroup;
+			children = (
+				B4483B872C7FB38900C56F43 /* FetchUserUseCaseImpl.swift */,
+				B4483B6B2C7F752400C56F43 /* FetchUserUseCase.swift */,
+				B4483B952C80548B00C56F43 /* FetchUserUseCasePreview.swift */,
+			);
+			path = Fetch;
+			sourceTree = "<group>";
+		};
+		B4483B982C8057B400C56F43 /* LogOut */ = {
+			isa = PBXGroup;
+			children = (
+				B4483B992C8057C600C56F43 /* LogOutUseCase.swift */,
+				B4483B9B2C8057D200C56F43 /* LogOutUseCaseImpl.swift */,
+				B4483B9D2C8057DD00C56F43 /* LogOutUseCasePreview.swift */,
+			);
+			path = LogOut;
 			sourceTree = "<group>";
 		};
 		B46F86112C7A5ACD004F66D8 = {
@@ -379,18 +571,42 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4483B482C7A6F3400C56F43 /* Course.swift in Sources */,
+				B4483B5F2C7F6EB400C56F43 /* MainView.swift in Sources */,
+				B4483B852C7F8D1D00C56F43 /* GetNotificationUseCaseImpl.swift in Sources */,
 				B4483B5B2C7A72A700C56F43 /* GradeCalculator.swift in Sources */,
+				B4483B7D2C7F8BCC00C56F43 /* GetNotificationUseCase.swift in Sources */,
 				B4483B4A2C7A6F3900C56F43 /* Teacher.swift in Sources */,
 				B4483B4C2C7A6F4000C56F43 /* TeacherAssistance.swift in Sources */,
+				B4483B9A2C8057C600C56F43 /* LogOutUseCase.swift in Sources */,
 				B4483B552C7A714400C56F43 /* Grade.swift in Sources */,
 				B4483B532C7A70A300C56F43 /* Gradeable.swift in Sources */,
+				B4483B672C7F741900C56F43 /* MoreView.swift in Sources */,
+				B4483B7F2C7F8BDA00C56F43 /* UseCase.swift in Sources */,
+				B4483B902C80534800C56F43 /* MoreUseCaseFactory.swift in Sources */,
 				B4483B502C7A6F5100C56F43 /* AccountType.swift in Sources */,
+				B4483B962C80548C00C56F43 /* FetchUserUseCasePreview.swift in Sources */,
+				B4483B922C80540F00C56F43 /* MoreUseCaseFactoryImpl.swift in Sources */,
+				B4483B712C7F79C900C56F43 /* MoreViewContent.swift in Sources */,
+				B4483B652C7F721F00C56F43 /* User.swift in Sources */,
+				B4483B942C80541D00C56F43 /* MoreUseCaseFactoryPreview.swift in Sources */,
+				B4483B9C2C8057D200C56F43 /* LogOutUseCaseImpl.swift in Sources */,
+				B4483B8B2C7FB45D00C56F43 /* DependencyContainer.swift in Sources */,
 				B4483B452C7A6EC400C56F43 /* Subject.swift in Sources */,
 				B4483B5D2C7A730E00C56F43 /* Int+Extension.swift in Sources */,
+				B4483B732C7F820E00C56F43 /* UserMenu.swift in Sources */,
+				B4483B812C7F8CD300C56F43 /* Notification.swift in Sources */,
+				B4483BA02C80595B00C56F43 /* MainDependencyFactory.swift in Sources */,
 				B4483B592C7A725800C56F43 /* Session.swift in Sources */,
+				B4483B8D2C8050AD00C56F43 /* DIFactory.swift in Sources */,
+				B4483B6C2C7F752400C56F43 /* FetchUserUseCase.swift in Sources */,
 				B46F86202C7A5ACD004F66D8 /* ContentView.swift in Sources */,
+				B4483B792C7F8B9500C56F43 /* NotificationViewModel.swift in Sources */,
+				B4483B9E2C8057DD00C56F43 /* LogOutUseCasePreview.swift in Sources */,
 				B4483B4E2C7A6F4800C56F43 /* Student.swift in Sources */,
 				B46F861E2C7A5ACD004F66D8 /* EduManagerApp.swift in Sources */,
+				B4483B7B2C7F8B9F00C56F43 /* CalendarViewModel.swift in Sources */,
+				B4483B882C7FB38900C56F43 /* FetchUserUseCaseImpl.swift in Sources */,
+				B4483B692C7F742500C56F43 /* MoreViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
