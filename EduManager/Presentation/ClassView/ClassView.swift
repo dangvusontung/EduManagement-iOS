@@ -49,24 +49,6 @@ struct ClassViewContent: View {
     }
 }
 
-class ClassViewModel {
-    var currentClasses: [String]
-    var upcomingClasses: [String]
-
-    init(currentClasses: [String], upcomingClasses: [String]) {
-        self.currentClasses = currentClasses
-        self.upcomingClasses = upcomingClasses
-    }
-
-    func viewSchedule() {
-        // Implementation for viewing schedule
-    }
-
-    func viewGrades() {
-        // Implementation for viewing grades
-    }
-}
-
 struct ClassDependencyFactoryPreview: ClassDependencyFactory {
     func makeClassViewModel() -> ClassViewModel {
         ClassViewModel(

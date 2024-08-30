@@ -40,24 +40,6 @@ struct NotificationViewContent: View {
     }
 }
 
-class NotificationViewModel {
-    var newNotifications: [String]
-    var earlierNotifications: [String]
-
-    init(newNotifications: [String], earlierNotifications: [String]) {
-        self.newNotifications = newNotifications
-        self.earlierNotifications = earlierNotifications
-    }
-
-    func markAsRead(_ notification: String) {
-        // Implementation for marking a notification as read
-    }
-
-    func clearAll() {
-        // Implementation for clearing all notifications
-    }
-}
-
 struct NotificationDependencyFactoryPreview: NotificationDependencyFactory {
     func makeNotificationViewModel() -> NotificationViewModel {
         NotificationViewModel(
