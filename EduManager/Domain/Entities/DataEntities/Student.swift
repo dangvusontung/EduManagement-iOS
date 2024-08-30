@@ -10,7 +10,7 @@ import Foundation
 struct Student {
     let id: String
     let name: String
-    let dateOfBirth: String
+    let dateOfBirth: Date
     
     let parentId: String
     

@@ -8,11 +8,13 @@
 import Foundation
 
 struct Course {
+    let id: String
     let name: String
     let startDate: Date
     let subject: Subject
     let endDate: Date
     let teacher: Teacher 
-    let assitances: [TeacherAssistance]
+    let assistances: [TeacherAssistance]
     let students: [Student]
+    let enrollmentCapacity: Int
 }

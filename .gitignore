@@ -22,3 +22,5 @@
 Package.resolved
 .vscode/settings.json
 *.xcbkptlist
+EduManager.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
+EduManager.xcodeproj/project.xcworkspace/xcuserdata/sontung.xcuserdatad/WorkspaceSettings.xcsettings

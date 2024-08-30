@@ -8,6 +8,10 @@
 import Foundation
 
 struct Notification {
+    let id: String
     let time: Date
-    let content: String 
+    let title: String
+    let content: String
 }
+
+extension Notification: Identifiable {}

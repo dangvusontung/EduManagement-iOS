@@ -14,7 +14,7 @@ class MoreViewModel {
     
     @ObservationIgnored var fetchUserUseCase: any FetchUserUseCase
     
-    init(factory: MoreUseCaseFactory) {
+    init(factory: MoreDependencyFactory) {
         self.fetchUserUseCase = factory.makeFetchUserUseCase()
         Task {
             try await fetchUser()

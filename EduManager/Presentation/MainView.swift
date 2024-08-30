@@ -15,6 +15,7 @@ struct MainView: View {
         TabView {
             dashboardView()
             calendarView()
+            classView()
             notificationView()
             moreview()
         }
@@ -31,11 +32,20 @@ struct MainView: View {
     
     @ViewBuilder
     func calendarView() -> some View {
-        Text("Calendar")
+        let viewModel = dependencyFactory.makeCalendarViewModel()
+        CalendarView(viewModel: viewModel)
             .tabItem {
                 Label("Calendar", systemImage: "calendar")
             }
             
+    }
+    
+    @ViewBuilder
+    func classView() -> some View {
+        Text("Class")
+            .tabItem {
+                Label("My Class", systemImage: "list.clipboard.fill")
+            }
     }
     
     @ViewBuilder

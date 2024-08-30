@@ -12,6 +12,13 @@ struct MoreView: View {
     @State var viewModel: MoreViewModel
     
     var body: some View {
-        MoreViewContent(user: viewModel.user)
+        NavigationStack {
+            MoreViewContent(user: viewModel.user)
+        }
     }
+}
+
+#Preview {
+    let viewModel = MoreViewModel(factory: MoreDependencyFactoryPreview())
+    return MoreView(viewModel: viewModel)
 }

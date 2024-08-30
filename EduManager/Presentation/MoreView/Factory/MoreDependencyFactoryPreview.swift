@@ -7,7 +7,7 @@
 
 import Foundation
 
-class MoreUseCaseFactoryPreview: MoreUseCaseFactory {
+class MoreDependencyFactoryPreview: MoreDependencyFactory {
     func makeFetchUserUseCase() -> any FetchUserUseCase {
         FetchUserUseCasePreview()
     }

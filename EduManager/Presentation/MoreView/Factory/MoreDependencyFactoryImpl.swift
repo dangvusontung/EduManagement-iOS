@@ -7,7 +7,7 @@
 
 import Foundation
 
-class MoreUseCaseFactoryImpl: MoreUseCaseFactory {
+class MoreDependencyFactoryImpl: MoreDependencyFactory {
     func makeFetchUserUseCase() -> any FetchUserUseCase {
         FetchUserUseCaseImpl()
     }
