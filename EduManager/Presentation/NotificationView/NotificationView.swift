@@ -8,11 +8,61 @@
 import SwiftUI
 
 struct NotificationView: View {
+    @State var viewModel: NotificationViewModel
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            NotificationViewContent(viewModel: viewModel)
+                .navigationTitle("Notifications")
+                .navigationBarTitleDisplayMode(.large)
+        }
+    }
+}
+
+struct NotificationViewContent: View {
+    let viewModel: NotificationViewModel
+
+    var body: some View {
+        List {
+            Section(header: Text("New Notifications")) {
+                ForEach(viewModel.newNotifications, id: \.self) { notification in
+                    Text(notification)
+                }
+            }
+
+            Section(header: Text("Earlier")) {
+                ForEach(viewModel.earlierNotifications, id: \.self) { notification in
+                    Text(notification)
+                }
+            }
+        }
+        .listStyle(.insetGrouped)
+    }
+}
+
+struct NotificationViewModel {
+    let newNotifications: [String]
+    let earlierNotifications: [String]
+
+    func markAsRead(_ notification: String) {
+        // Implementation for marking a notification as read
+    }
+
+    func clearAll() {
+        // Implementation for clearing all notifications
+    }
+}
+
+struct NotificationDependencyFactoryPreview: NotificationDependencyFactory {
+    func makeNotificationViewModel() -> NotificationViewModel {
+        NotificationViewModel(
+            newNotifications: ["New assignment posted", "Upcoming exam reminder"],
+            earlierNotifications: ["Grade posted for Math quiz", "Class schedule changed"]
+        )
     }
 }
 
 #Preview {
-    NotificationView()
+    let viewModel = NotificationViewModel(factory: NotificationDependencyFactoryPreview())
+    return NotificationView(viewModel: viewModel)
 }
