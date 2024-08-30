@@ -54,10 +54,16 @@ struct DashboardViewContent: View {
     }
 }
 
-struct DashboardViewModel {
-    let userName: String
-    let upcomingEvents: [String]
-    let recentActivities: [String]
+class DashboardViewModel {
+    var userName: String
+    var upcomingEvents: [String]
+    var recentActivities: [String]
+
+    init(userName: String, upcomingEvents: [String], recentActivities: [String]) {
+        self.userName = userName
+        self.upcomingEvents = upcomingEvents
+        self.recentActivities = recentActivities
+    }
 
     func viewSchedule() {
         // Implementation for viewing schedule

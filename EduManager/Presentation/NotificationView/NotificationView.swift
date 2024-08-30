@@ -40,9 +40,14 @@ struct NotificationViewContent: View {
     }
 }
 
-struct NotificationViewModel {
-    let newNotifications: [String]
-    let earlierNotifications: [String]
+class NotificationViewModel {
+    var newNotifications: [String]
+    var earlierNotifications: [String]
+
+    init(newNotifications: [String], earlierNotifications: [String]) {
+        self.newNotifications = newNotifications
+        self.earlierNotifications = earlierNotifications
+    }
 
     func markAsRead(_ notification: String) {
         // Implementation for marking a notification as read
