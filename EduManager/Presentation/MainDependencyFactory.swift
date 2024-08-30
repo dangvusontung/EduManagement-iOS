@@ -17,8 +17,7 @@ struct MainDependencyFactory {
             return MoreViewModel(factory: factory)
         }
     }
-    
-    
+
     func makeCalendarViewModel() -> CalendarViewModel {
         if isPreview {
             let factory = CalendarDependencyPreview()
@@ -28,7 +27,37 @@ struct MainDependencyFactory {
             return CalendarViewModel(factory: factory)
         }
     }
-    
+
+    func makeDashboardViewModel() -> DashboardViewModel {
+        if isPreview {
+            let factory = DashboardDependencyFactoryPreview()
+            return DashboardViewModel(factory: factory)
+        } else {
+            let factory = DashboardDependencyFactoryImpl()
+            return DashboardViewModel(factory: factory)
+        }
+    }
+
+    func makeNotificationViewModel() -> NotificationViewModel {
+        if isPreview {
+            let factory = NotificationDependencyFactoryPreview()
+            return NotificationViewModel(factory: factory)
+        } else {
+            let factory = NotificationDependencyFactoryImpl()
+            return NotificationViewModel(factory: factory)
+        }
+    }
+
+    func makeClassViewModel() -> ClassViewModel {
+        if isPreview {
+            let factory = ClassDependencyFactoryPreview()
+            return ClassViewModel(factory: factory)
+        } else {
+            let factory = ClassDependencyFactoryImpl()
+            return ClassViewModel(factory: factory)
+        }
+    }
+
     var isPreview: Bool {
         ProcessInfo.processInfo.environment["XCODE_RUNNING_FOR_PREVIEWS"] == "1"
     }
