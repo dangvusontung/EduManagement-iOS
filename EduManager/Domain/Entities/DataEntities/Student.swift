@@ -7,11 +7,19 @@
 
 import Foundation
 
-struct Student {
+struct Student: Identifiable {
     let id: String
     let name: String
     let dateOfBirth: Date
     
     let parentId: String
     
+}
+
+extension Student {
+    static var mocks: [Student] {
+        return Array(0...10).map {
+            Student(id: "id\($0)", name: "Student \($0)", dateOfBirth: Date(), parentId: "parent\($0)")
+        }
+    }
 }

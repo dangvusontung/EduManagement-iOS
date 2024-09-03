@@ -15,7 +15,7 @@ struct MainView: View {
         TabView {
             dashboardView()
             calendarView()
-            classView()
+            courseView()
             notificationView()
             moreview()
         }
@@ -41,8 +41,9 @@ struct MainView: View {
     }
     
     @ViewBuilder
-    func classView() -> some View {
-        Text("Class")
+    func courseView() -> some View {
+        let viewModel = dependencyFactory.makeCourseViewModel()
+        CoursesView(viewModel: viewModel)
             .tabItem {
                 Label("My Class", systemImage: "list.clipboard.fill")
             }
@@ -50,7 +51,9 @@ struct MainView: View {
     
     @ViewBuilder
     func notificationView() -> some View {
-        Text("Notification")
+        let viewModel = dependencyFactory.makeNotifcationViewModel()
+        
+        NotificationView(viewModel: viewModel)
             .tabItem {
                 Label("Notification", systemImage: "envelope.badge.fill")
             }
@@ -65,8 +68,4 @@ struct MainView: View {
                 Label("More", systemImage: "ellipsis")
             }
     }
-}
-
-#Preview {
-    MainView()
 }

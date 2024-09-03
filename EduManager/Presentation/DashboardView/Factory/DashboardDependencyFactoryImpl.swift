@@ -6,3 +6,14 @@
 //
 
 import Foundation
+
+class DashboardDependencyFactoryImpl: DashboardDependencyFactory {
+    
+    func makeGetDashboardContentUseCase() -> any GetDashboardContentUseCase {
+        GetDashboardContentUseCaseImpl()
+    }
+    
+    deinit {
+        print("Dashboard Dependency factory deinit")
+    }
+}

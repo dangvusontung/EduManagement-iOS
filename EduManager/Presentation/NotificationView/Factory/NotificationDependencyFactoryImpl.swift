@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+class NotificationDependencyFactoryImpl: NotificationDependencyFactory {
+    func makeGetNotificationUseCase() -> any GetNotificationUseCase {
+        return GetNotificationUseCaseImpl()
+    }
+}

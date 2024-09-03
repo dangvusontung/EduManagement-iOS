@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MoreViewContent: View {
     
-    var user: User
+    @State var user: User
     
     var body: some View {
         List {

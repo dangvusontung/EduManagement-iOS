@@ -9,27 +9,28 @@ import Foundation
 
 struct MainDependencyFactory {
     func makeMoreViewModel() -> MoreViewModel {
-        if isPreview {
-            let factory = MoreDependencyFactoryPreview()
-            return MoreViewModel(factory: factory)
-        } else {
-            let factory = MoreDependencyFactoryImpl()
-            return MoreViewModel(factory: factory)
-        }
+        let factory = MoreDependencyFactoryImpl()
+        return MoreViewModel(factory: factory)
     }
-    
     
     func makeCalendarViewModel() -> CalendarViewModel {
-        if isPreview {
-            let factory = CalendarDependencyPreview()
-            return CalendarViewModel(factory: factory)
-        } else {
-            let factory = CalendarDependencyFactoryImpl()
-            return CalendarViewModel(factory: factory)
-        }
+        let factory = CalendarDependencyFactoryImpl()
+        return CalendarViewModel(factory: factory)
+    }
+
+    func makeDashboardViewModel() -> DashboardViewModel {
+        let factory = DashboardDependencyFactoryImpl()
+        return DashboardViewModel(dashboardDependencyFactory: factory)
     }
     
-    var isPreview: Bool {
-        ProcessInfo.processInfo.environment["XCODE_RUNNING_FOR_PREVIEWS"] == "1"
+    func makeNotifcationViewModel() -> NotificationViewModel {
+        let factory = NotificationDependencyFactoryImpl()
+        return NotificationViewModel(factory: factory)
+    }    
+    
+    func makeCourseViewModel() -> CoursesViewModel {
+        let factory = CoursesDependencyFactoryImpl()
+        return CoursesViewModel(getCoursesUseCase: factory.makeGetCourseUseCase())
     }
 }
+

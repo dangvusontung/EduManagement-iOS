@@ -7,4 +7,4 @@
 
 import Foundation
 
-protocol GetDashboardInfoUseCase: SimpleUseCase where Output == String {}
+protocol GetDashboardContentUseCase: SimpleUseCase where Output == [DashboardContent] {}

@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+protocol NotificationDependencyFactory: AnyObject {
+    func makeGetNotificationUseCase() -> any GetNotificationUseCase
+}

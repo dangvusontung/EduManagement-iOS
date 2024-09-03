@@ -7,4 +7,8 @@
 
 import Foundation
 
-protocol GetCourseUseCase: UseCase where Input == Int, Output == [Course] {}
+struct GetCoursesParam {
+    
+}
+
+protocol GetCoursesUseCase: UseCase where Input == GetCoursesParam, Output == [Course] {}

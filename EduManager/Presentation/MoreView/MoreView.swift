@@ -17,8 +17,3 @@ struct MoreView: View {
         }
     }
 }
-
-#Preview {
-    let viewModel = MoreViewModel(factory: MoreDependencyFactoryPreview())
-    return MoreView(viewModel: viewModel)
-}

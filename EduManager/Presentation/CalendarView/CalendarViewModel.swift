@@ -10,11 +10,10 @@ import Foundation
 import Foundation
 
 @Observable
-class CalendarViewModel {
+class CalendarViewModel: PagingViewModel<ScheduleEvent> {
     @ObservationIgnored var getScheduleUseCase: any GetScheduleUseCase
-    @ObservationIgnored var fetchEventTask: Task<Void, Never>?
     
-    var events: [ScheduleEvent] = []
+    var searchText: String = ""
     var startDate: Date
     var endDate: Date
     var loadingMore = false
@@ -23,26 +22,22 @@ class CalendarViewModel {
         startDate = Date()
         endDate = Date()
         self.getScheduleUseCase = factory.makeGetSchedulerUseCase()
-        
-        fetchEventTask = Task {
-            await fetchEvents()
+        super.init()
+    }
+    
+    override func loadItems() async throws -> [ScheduleEvent] {
+        print("Calendar view load item")
+        let params = GetScheduleUseCaseParam(startDate: startDate, endDate: endDate)
+        return try await getScheduleUseCase.execute(input: params)
+    }
+    
+    var events: [ScheduleEvent] {
+        if searchText.isEmpty {
+            return items
+        }
+        return items.filter { item in
+            item.name.lowercased().contains(searchText.lowercased())
         }
     }
     
-    private func fetchEvents() async {
-        do {
-            let params = GetScheduleUseCaseParam(startDate: startDate, endDate: endDate)
-            let fetchedEvents = try await getScheduleUseCase.execute(input: params)
-            print("event fetch success \(fetchedEvents)")
-            events = fetchedEvents // Update the events property with fetched events
-        } catch {
-            print("Error fetching events: \(error)") // Improved error message
-        }
-    }
-    
-    // Method to cancel the fetch task if needed
-    func cancelFetchEventTask() {
-        fetchEventTask?.cancel() // Cancel the task if it's running
-        fetchEventTask = nil // Clear the reference
-    }
 }

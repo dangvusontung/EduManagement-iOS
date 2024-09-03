@@ -15,6 +15,7 @@ struct ScheduleEvent {
     let endTime: Date              // End time of the event
     let location: String?          // Location of the event, optional
     let description: String?       // Brief description of the event, optional
+    let personInChargeName: String // name of the PIC
 }
 
 extension ScheduleEvent: Identifiable {}

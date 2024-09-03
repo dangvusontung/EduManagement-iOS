@@ -8,11 +8,24 @@
 import SwiftUI
 
 struct NotificationView: View {
+    
+    @State var viewModel: NotificationViewModel
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            List(viewModel.notifications) { notification in
+                NotificationItemView(notification: notification, read: true)
+            }
+            .listStyle(.grouped)
+            .navigationTitle("Notifications")
+            .navigationBarTitleDisplayMode(.large)
+        }
+
     }
 }
 
 #Preview {
-    NotificationView()
+    let factory = NotificationDependencyFactoryImpl()
+    let viewModel = NotificationViewModel(factory: factory)
+    return NotificationView(viewModel: viewModel)
 }

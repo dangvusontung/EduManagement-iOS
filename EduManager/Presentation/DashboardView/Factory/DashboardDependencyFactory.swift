@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+protocol DashboardDependencyFactory: AnyObject {
+    func makeGetDashboardContentUseCase() -> any GetDashboardContentUseCase
+}

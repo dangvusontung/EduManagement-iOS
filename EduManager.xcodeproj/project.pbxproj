@@ -36,7 +36,6 @@
 		B4483B8D2C8050AD00C56F43 /* DIFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483B8C2C8050AD00C56F43 /* DIFactory.swift */; };
 		B4483B902C80534800C56F43 /* MoreDependencyFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483B8F2C80534800C56F43 /* MoreDependencyFactory.swift */; };
 		B4483B922C80540F00C56F43 /* MoreDependencyFactoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483B912C80540F00C56F43 /* MoreDependencyFactoryImpl.swift */; };
-		B4483B942C80541D00C56F43 /* MoreDependencyFactoryPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483B932C80541D00C56F43 /* MoreDependencyFactoryPreview.swift */; };
 		B4483B962C80548C00C56F43 /* FetchUserUseCasePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483B952C80548B00C56F43 /* FetchUserUseCasePreview.swift */; };
 		B4483B9A2C8057C600C56F43 /* LogOutUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483B992C8057C600C56F43 /* LogOutUseCase.swift */; };
 		B4483B9C2C8057D200C56F43 /* LogOutUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483B9B2C8057D200C56F43 /* LogOutUseCaseImpl.swift */; };
@@ -52,9 +51,8 @@
 		B4483BBC2C80BDC600C56F43 /* CourseSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483BBB2C80BDC600C56F43 /* CourseSchedule.swift */; };
 		B4483BBE2C80C1E400C56F43 /* GetCourseUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483BBD2C80C1E400C56F43 /* GetCourseUseCase.swift */; };
 		B4483BC02C80C1EF00C56F43 /* GetCourseUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483BBF2C80C1EF00C56F43 /* GetCourseUseCaseImpl.swift */; };
-		B4483BC22C80C7F100C56F43 /* GetDashboardInfoUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483BC12C80C7F100C56F43 /* GetDashboardInfoUseCase.swift */; };
+		B4483BC22C80C7F100C56F43 /* GetDashboardContentUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483BC12C80C7F100C56F43 /* GetDashboardContentUseCase.swift */; };
 		B4483BC42C80D1CD00C56F43 /* CalendarDependencyFactoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483BC32C80D1CD00C56F43 /* CalendarDependencyFactoryImpl.swift */; };
-		B4483BC62C80D22F00C56F43 /* CalendarDependencyPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483BC52C80D22F00C56F43 /* CalendarDependencyPreview.swift */; };
 		B4483BCE2C80D33800C56F43 /* CourseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483BCD2C80D33800C56F43 /* CourseModel.swift */; };
 		B4483BD02C80D42600C56F43 /* TeacherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483BCF2C80D42600C56F43 /* TeacherModel.swift */; };
 		B4483BD22C80D42C00C56F43 /* StudentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483BD12C80D42C00C56F43 /* StudentModel.swift */; };
@@ -62,20 +60,36 @@
 		B4483BD82C80D88800C56F43 /* NotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483BD72C80D88800C56F43 /* NotificationModel.swift */; };
 		B4483BDA2C80D93200C56F43 /* ScheduleEventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483BD92C80D93200C56F43 /* ScheduleEventModel.swift */; };
 		B4483BDE2C80E2F300C56F43 /* ScheduleItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4483BDD2C80E2F300C56F43 /* ScheduleItemView.swift */; };
-		B464F5DC2C822CA0008909CC /* ClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B464F5DB2C822CA0008909CC /* ClassView.swift */; };
-		B464F5DE2C822CA8008909CC /* ClassViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B464F5DD2C822CA8008909CC /* ClassViewModel.swift */; };
-		B464F5E12C822CF5008909CC /* ClassDependencyFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B464F5E02C822CF5008909CC /* ClassDependencyFactory.swift */; };
-		B464F5E32C822D01008909CC /* ClassDependencyFactoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B464F5E22C822D01008909CC /* ClassDependencyFactoryImpl.swift */; };
-		B464F5E52C822D0D008909CC /* ClassDependencyFactoryPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B464F5E42C822D0D008909CC /* ClassDependencyFactoryPreview.swift */; };
+		B464F5DC2C822CA0008909CC /* CoursesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B464F5DB2C822CA0008909CC /* CoursesView.swift */; };
+		B464F5DE2C822CA8008909CC /* CoursesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B464F5DD2C822CA8008909CC /* CoursesViewModel.swift */; };
+		B464F5E12C822CF5008909CC /* CoursesDependencyFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B464F5E02C822CF5008909CC /* CoursesDependencyFactory.swift */; };
+		B464F5E32C822D01008909CC /* CoursesDependencyFactoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B464F5E22C822D01008909CC /* CoursesDependencyFactoryImpl.swift */; };
 		B464F5E72C822D1E008909CC /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B464F5E62C822D1E008909CC /* NotificationView.swift */; };
 		B464F5EA2C822D33008909CC /* NotificationDependencyFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B464F5E92C822D33008909CC /* NotificationDependencyFactory.swift */; };
 		B464F5EC2C822D3E008909CC /* NotificationDependencyFactoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B464F5EB2C822D3E008909CC /* NotificationDependencyFactoryImpl.swift */; };
-		B464F5EE2C822D49008909CC /* NotificationDependencyFactoryPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B464F5ED2C822D49008909CC /* NotificationDependencyFactoryPreview.swift */; };
 		B464F5F32C822DB6008909CC /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B464F5F22C822DB6008909CC /* DashboardViewModel.swift */; };
 		B464F5F52C822DBE008909CC /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B464F5F42C822DBE008909CC /* DashboardView.swift */; };
 		B464F5FB2C822E8F008909CC /* DashboardDependencyFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B464F5FA2C822E8F008909CC /* DashboardDependencyFactory.swift */; };
 		B464F5FD2C822E9A008909CC /* DashboardDependencyFactoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B464F5FC2C822E9A008909CC /* DashboardDependencyFactoryImpl.swift */; };
-		B464F5FF2C822EA1008909CC /* DashboardDependencyFactoryPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B464F5FE2C822EA1008909CC /* DashboardDependencyFactoryPreview.swift */; };
+		B464F6082C84C122008909CC /* NotificationItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B464F6072C84C122008909CC /* NotificationItemView.swift */; };
+		B464F60A2C84C292008909CC /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B464F6092C84C292008909CC /* Date+Extension.swift */; };
+		B464F60D2C84C2AC008909CC /* DateFormatterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B464F60C2C84C2AC008909CC /* DateFormatterManager.swift */; };
+		B464F60F2C84C2DD008909CC /* DateFormatStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B464F60E2C84C2DD008909CC /* DateFormatStrategy.swift */; };
+		B464F6112C84CA59008909CC /* ViewModelState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B464F6102C84CA59008909CC /* ViewModelState.swift */; };
+		B464F6132C84CCC3008909CC /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B464F6122C84CCC3008909CC /* BaseViewModel.swift */; };
+		B464F6152C84CF1F008909CC /* PagingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B464F6142C84CF1F008909CC /* PagingViewModel.swift */; };
+		B464F6172C84D0B6008909CC /* TaskIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B464F6162C84D0B6008909CC /* TaskIdentifier.swift */; };
+		B464F61A2C84EBEF008909CC /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B464F6192C84EBEF008909CC /* ListItemView.swift */; };
+		B464F61E2C84EE9C008909CC /* CourseViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B464F61D2C84EE9C008909CC /* CourseViewItem.swift */; };
+		B464F6202C84F039008909CC /* SectionableListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B464F61F2C84F039008909CC /* SectionableListItem.swift */; };
+		B464F6222C84F050008909CC /* Sectionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B464F6212C84F050008909CC /* Sectionable.swift */; };
+		B464F6252C858BEC008909CC /* PagingSectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B464F6242C858BEC008909CC /* PagingSectionViewModel.swift */; };
+		B464F6272C8594A3008909CC /* DashboardContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B464F6262C8594A3008909CC /* DashboardContent.swift */; };
+		B464F6292C859618008909CC /* GetDashboardContentUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B464F6282C859618008909CC /* GetDashboardContentUseCaseImpl.swift */; };
+		B464F62B2C860BED008909CC /* ScheduleEventDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B464F62A2C860BED008909CC /* ScheduleEventDetailView.swift */; };
+		B464F62D2C8628F3008909CC /* CourseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B464F62C2C8628F3008909CC /* CourseDetailView.swift */; };
+		B464F62F2C86CDC8008909CC /* NotificationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B464F62E2C86CDC8008909CC /* NotificationDetailView.swift */; };
+		B464F6352C86DEFD008909CC /* GetListTeachersUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B464F6342C86DEFD008909CC /* GetListTeachersUseCase.swift */; };
 		B46F861E2C7A5ACD004F66D8 /* EduManagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46F861D2C7A5ACD004F66D8 /* EduManagerApp.swift */; };
 		B46F86202C7A5ACD004F66D8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46F861F2C7A5ACD004F66D8 /* ContentView.swift */; };
 		B46F86222C7A5ACF004F66D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B46F86212C7A5ACF004F66D8 /* Assets.xcassets */; };
@@ -132,7 +146,6 @@
 		B4483B8C2C8050AD00C56F43 /* DIFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIFactory.swift; sourceTree = "<group>"; };
 		B4483B8F2C80534800C56F43 /* MoreDependencyFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreDependencyFactory.swift; sourceTree = "<group>"; };
 		B4483B912C80540F00C56F43 /* MoreDependencyFactoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreDependencyFactoryImpl.swift; sourceTree = "<group>"; };
-		B4483B932C80541D00C56F43 /* MoreDependencyFactoryPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreDependencyFactoryPreview.swift; sourceTree = "<group>"; };
 		B4483B952C80548B00C56F43 /* FetchUserUseCasePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchUserUseCasePreview.swift; sourceTree = "<group>"; };
 		B4483B992C8057C600C56F43 /* LogOutUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutUseCase.swift; sourceTree = "<group>"; };
 		B4483B9B2C8057D200C56F43 /* LogOutUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutUseCaseImpl.swift; sourceTree = "<group>"; };
@@ -148,29 +161,44 @@
 		B4483BBB2C80BDC600C56F43 /* CourseSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseSchedule.swift; sourceTree = "<group>"; };
 		B4483BBD2C80C1E400C56F43 /* GetCourseUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCourseUseCase.swift; sourceTree = "<group>"; };
 		B4483BBF2C80C1EF00C56F43 /* GetCourseUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCourseUseCaseImpl.swift; sourceTree = "<group>"; };
-		B4483BC12C80C7F100C56F43 /* GetDashboardInfoUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDashboardInfoUseCase.swift; sourceTree = "<group>"; };
+		B4483BC12C80C7F100C56F43 /* GetDashboardContentUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDashboardContentUseCase.swift; sourceTree = "<group>"; };
 		B4483BC32C80D1CD00C56F43 /* CalendarDependencyFactoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDependencyFactoryImpl.swift; sourceTree = "<group>"; };
-		B4483BC52C80D22F00C56F43 /* CalendarDependencyPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDependencyPreview.swift; sourceTree = "<group>"; };
 		B4483BCD2C80D33800C56F43 /* CourseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseModel.swift; sourceTree = "<group>"; };
 		B4483BCF2C80D42600C56F43 /* TeacherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherModel.swift; sourceTree = "<group>"; };
 		B4483BD12C80D42C00C56F43 /* StudentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentModel.swift; sourceTree = "<group>"; };
 		B4483BD72C80D88800C56F43 /* NotificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationModel.swift; sourceTree = "<group>"; };
 		B4483BD92C80D93200C56F43 /* ScheduleEventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleEventModel.swift; sourceTree = "<group>"; };
 		B4483BDD2C80E2F300C56F43 /* ScheduleItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleItemView.swift; sourceTree = "<group>"; };
-		B464F5DB2C822CA0008909CC /* ClassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassView.swift; sourceTree = "<group>"; };
-		B464F5DD2C822CA8008909CC /* ClassViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassViewModel.swift; sourceTree = "<group>"; };
-		B464F5E02C822CF5008909CC /* ClassDependencyFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassDependencyFactory.swift; sourceTree = "<group>"; };
-		B464F5E22C822D01008909CC /* ClassDependencyFactoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassDependencyFactoryImpl.swift; sourceTree = "<group>"; };
-		B464F5E42C822D0D008909CC /* ClassDependencyFactoryPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassDependencyFactoryPreview.swift; sourceTree = "<group>"; };
+		B464F5DB2C822CA0008909CC /* CoursesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesView.swift; sourceTree = "<group>"; };
+		B464F5DD2C822CA8008909CC /* CoursesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesViewModel.swift; sourceTree = "<group>"; };
+		B464F5E02C822CF5008909CC /* CoursesDependencyFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesDependencyFactory.swift; sourceTree = "<group>"; };
+		B464F5E22C822D01008909CC /* CoursesDependencyFactoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesDependencyFactoryImpl.swift; sourceTree = "<group>"; };
 		B464F5E62C822D1E008909CC /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		B464F5E92C822D33008909CC /* NotificationDependencyFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDependencyFactory.swift; sourceTree = "<group>"; };
 		B464F5EB2C822D3E008909CC /* NotificationDependencyFactoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDependencyFactoryImpl.swift; sourceTree = "<group>"; };
-		B464F5ED2C822D49008909CC /* NotificationDependencyFactoryPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDependencyFactoryPreview.swift; sourceTree = "<group>"; };
 		B464F5F22C822DB6008909CC /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 		B464F5F42C822DBE008909CC /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		B464F5FA2C822E8F008909CC /* DashboardDependencyFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardDependencyFactory.swift; sourceTree = "<group>"; };
 		B464F5FC2C822E9A008909CC /* DashboardDependencyFactoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardDependencyFactoryImpl.swift; sourceTree = "<group>"; };
-		B464F5FE2C822EA1008909CC /* DashboardDependencyFactoryPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardDependencyFactoryPreview.swift; sourceTree = "<group>"; };
+		B464F6072C84C122008909CC /* NotificationItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationItemView.swift; sourceTree = "<group>"; };
+		B464F6092C84C292008909CC /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		B464F60C2C84C2AC008909CC /* DateFormatterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterManager.swift; sourceTree = "<group>"; };
+		B464F60E2C84C2DD008909CC /* DateFormatStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatStrategy.swift; sourceTree = "<group>"; };
+		B464F6102C84CA59008909CC /* ViewModelState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelState.swift; sourceTree = "<group>"; };
+		B464F6122C84CCC3008909CC /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		B464F6142C84CF1F008909CC /* PagingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingViewModel.swift; sourceTree = "<group>"; };
+		B464F6162C84D0B6008909CC /* TaskIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskIdentifier.swift; sourceTree = "<group>"; };
+		B464F6192C84EBEF008909CC /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
+		B464F61D2C84EE9C008909CC /* CourseViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseViewItem.swift; sourceTree = "<group>"; };
+		B464F61F2C84F039008909CC /* SectionableListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionableListItem.swift; sourceTree = "<group>"; };
+		B464F6212C84F050008909CC /* Sectionable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sectionable.swift; sourceTree = "<group>"; };
+		B464F6242C858BEC008909CC /* PagingSectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingSectionViewModel.swift; sourceTree = "<group>"; };
+		B464F6262C8594A3008909CC /* DashboardContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardContent.swift; sourceTree = "<group>"; };
+		B464F6282C859618008909CC /* GetDashboardContentUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDashboardContentUseCaseImpl.swift; sourceTree = "<group>"; };
+		B464F62A2C860BED008909CC /* ScheduleEventDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleEventDetailView.swift; sourceTree = "<group>"; };
+		B464F62C2C8628F3008909CC /* CourseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailView.swift; sourceTree = "<group>"; };
+		B464F62E2C86CDC8008909CC /* NotificationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDetailView.swift; sourceTree = "<group>"; };
+		B464F6342C86DEFD008909CC /* GetListTeachersUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetListTeachersUseCase.swift; sourceTree = "<group>"; };
 		B46F861A2C7A5ACD004F66D8 /* EduManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EduManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B46F861D2C7A5ACD004F66D8 /* EduManagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EduManagerApp.swift; sourceTree = "<group>"; };
 		B46F861F2C7A5ACD004F66D8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -231,6 +259,7 @@
 		B4483B3E2C7A6E0A00C56F43 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				B464F6182C84EBCE008909CC /* Base */,
 				B464F5DA2C822C92008909CC /* Features */,
 				B464F5F12C822D9E008909CC /* DashboardView */,
 				B464F5D92C822C80008909CC /* ClassView */,
@@ -246,8 +275,10 @@
 		B4483B3F2C7A6E1700C56F43 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				B464F60B2C84C29D008909CC /* Formatter */,
 				B4483B5A2C7A72A700C56F43 /* GradeCalculator.swift */,
 				B4483B5C2C7A730E00C56F43 /* Int+Extension.swift */,
+				B464F6092C84C292008909CC /* Date+Extension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -255,9 +286,12 @@
 		B4483B402C7A6E1D00C56F43 /* Cores */ = {
 			isa = PBXGroup;
 			children = (
+				B464F6232C858BC9008909CC /* ViewModel */,
 				B4483B7E2C7F8BDA00C56F43 /* UseCase.swift */,
 				B4483B8A2C7FB45D00C56F43 /* DependencyContainer.swift */,
 				B4483B8C2C8050AD00C56F43 /* DIFactory.swift */,
+				B464F6102C84CA59008909CC /* ViewModelState.swift */,
+				B464F6162C84D0B6008909CC /* TaskIdentifier.swift */,
 			);
 			path = Cores;
 			sourceTree = "<group>";
@@ -275,6 +309,8 @@
 		B4483B422C7A6EB100C56F43 /* UseCase */ = {
 			isa = PBXGroup;
 			children = (
+				B464F6312C86DEDD008909CC /* Assistance */,
+				B464F6302C86DED2008909CC /* Teachers */,
 				B4483BB02C80858000C56F43 /* Calendar */,
 				B4483B762C7F8B6500C56F43 /* Dashboard */,
 				B4483B752C7F8B3700C56F43 /* Course */,
@@ -313,6 +349,7 @@
 				B4483BB32C80890F00C56F43 /* ScheduleEvent.swift */,
 				B4483BB92C80B22100C56F43 /* Class.swift */,
 				B4483BBB2C80BDC600C56F43 /* CourseSchedule.swift */,
+				B464F6262C8594A3008909CC /* DashboardContent.swift */,
 			);
 			path = DataEntities;
 			sourceTree = "<group>";
@@ -398,7 +435,8 @@
 		B4483B762C7F8B6500C56F43 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
-				B4483BC12C80C7F100C56F43 /* GetDashboardInfoUseCase.swift */,
+				B4483BC12C80C7F100C56F43 /* GetDashboardContentUseCase.swift */,
+				B464F6282C859618008909CC /* GetDashboardContentUseCaseImpl.swift */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -431,7 +469,6 @@
 			children = (
 				B4483B8F2C80534800C56F43 /* MoreDependencyFactory.swift */,
 				B4483B912C80540F00C56F43 /* MoreDependencyFactoryImpl.swift */,
-				B4483B932C80541D00C56F43 /* MoreDependencyFactoryPreview.swift */,
 			);
 			path = Factory;
 			sourceTree = "<group>";
@@ -461,7 +498,6 @@
 			children = (
 				B4483BAE2C80848B00C56F43 /* CalendarDependencyFactory.swift */,
 				B4483BC32C80D1CD00C56F43 /* CalendarDependencyFactoryImpl.swift */,
-				B4483BC52C80D22F00C56F43 /* CalendarDependencyPreview.swift */,
 			);
 			path = Factory;
 			sourceTree = "<group>";
@@ -492,6 +528,7 @@
 			isa = PBXGroup;
 			children = (
 				B4483BDD2C80E2F300C56F43 /* ScheduleItemView.swift */,
+				B464F62A2C860BED008909CC /* ScheduleEventDetailView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -501,8 +538,8 @@
 			children = (
 				B464F5DF2C822CAD008909CC /* Factory */,
 				B464F5F02C822D6E008909CC /* Components */,
-				B464F5DB2C822CA0008909CC /* ClassView.swift */,
-				B464F5DD2C822CA8008909CC /* ClassViewModel.swift */,
+				B464F5DB2C822CA0008909CC /* CoursesView.swift */,
+				B464F5DD2C822CA8008909CC /* CoursesViewModel.swift */,
 			);
 			path = ClassView;
 			sourceTree = "<group>";
@@ -517,9 +554,8 @@
 		B464F5DF2C822CAD008909CC /* Factory */ = {
 			isa = PBXGroup;
 			children = (
-				B464F5E02C822CF5008909CC /* ClassDependencyFactory.swift */,
-				B464F5E22C822D01008909CC /* ClassDependencyFactoryImpl.swift */,
-				B464F5E42C822D0D008909CC /* ClassDependencyFactoryPreview.swift */,
+				B464F5E02C822CF5008909CC /* CoursesDependencyFactory.swift */,
+				B464F5E22C822D01008909CC /* CoursesDependencyFactoryImpl.swift */,
 			);
 			path = Factory;
 			sourceTree = "<group>";
@@ -529,7 +565,6 @@
 			children = (
 				B464F5E92C822D33008909CC /* NotificationDependencyFactory.swift */,
 				B464F5EB2C822D3E008909CC /* NotificationDependencyFactoryImpl.swift */,
-				B464F5ED2C822D49008909CC /* NotificationDependencyFactoryPreview.swift */,
 			);
 			path = Factory;
 			sourceTree = "<group>";
@@ -537,6 +572,8 @@
 		B464F5EF2C822D58008909CC /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				B464F6072C84C122008909CC /* NotificationItemView.swift */,
+				B464F62E2C86CDC8008909CC /* NotificationDetailView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -544,6 +581,8 @@
 		B464F5F02C822D6E008909CC /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				B464F61D2C84EE9C008909CC /* CourseViewItem.swift */,
+				B464F62C2C8628F3008909CC /* CourseDetailView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -571,9 +610,52 @@
 			children = (
 				B464F5FA2C822E8F008909CC /* DashboardDependencyFactory.swift */,
 				B464F5FC2C822E9A008909CC /* DashboardDependencyFactoryImpl.swift */,
-				B464F5FE2C822EA1008909CC /* DashboardDependencyFactoryPreview.swift */,
 			);
 			path = Factory;
+			sourceTree = "<group>";
+		};
+		B464F60B2C84C29D008909CC /* Formatter */ = {
+			isa = PBXGroup;
+			children = (
+				B464F60C2C84C2AC008909CC /* DateFormatterManager.swift */,
+				B464F60E2C84C2DD008909CC /* DateFormatStrategy.swift */,
+			);
+			path = Formatter;
+			sourceTree = "<group>";
+		};
+		B464F6182C84EBCE008909CC /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B464F6192C84EBEF008909CC /* ListItemView.swift */,
+				B464F61F2C84F039008909CC /* SectionableListItem.swift */,
+				B464F6212C84F050008909CC /* Sectionable.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		B464F6232C858BC9008909CC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B464F6122C84CCC3008909CC /* BaseViewModel.swift */,
+				B464F6142C84CF1F008909CC /* PagingViewModel.swift */,
+				B464F6242C858BEC008909CC /* PagingSectionViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B464F6302C86DED2008909CC /* Teachers */ = {
+			isa = PBXGroup;
+			children = (
+				B464F6342C86DEFD008909CC /* GetListTeachersUseCase.swift */,
+			);
+			path = Teachers;
+			sourceTree = "<group>";
+		};
+		B464F6312C86DEDD008909CC /* Assistance */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assistance;
 			sourceTree = "<group>";
 		};
 		B46F86112C7A5ACD004F66D8 = {
@@ -775,46 +857,58 @@
 			files = (
 				B4483B482C7A6F3400C56F43 /* Course.swift in Sources */,
 				B4483BB22C80860900C56F43 /* GetScheduleUseCase.swift in Sources */,
+				B464F6252C858BEC008909CC /* PagingSectionViewModel.swift in Sources */,
 				B4483B5F2C7F6EB400C56F43 /* MainView.swift in Sources */,
-				B464F5EE2C822D49008909CC /* NotificationDependencyFactoryPreview.swift in Sources */,
 				B4483B852C7F8D1D00C56F43 /* GetNotificationUseCaseImpl.swift in Sources */,
 				B4483BB42C80890F00C56F43 /* ScheduleEvent.swift in Sources */,
+				B464F6132C84CCC3008909CC /* BaseViewModel.swift in Sources */,
 				B464F5F52C822DBE008909CC /* DashboardView.swift in Sources */,
-				B464F5FF2C822EA1008909CC /* DashboardDependencyFactoryPreview.swift in Sources */,
-				B464F5DC2C822CA0008909CC /* ClassView.swift in Sources */,
+				B464F5DC2C822CA0008909CC /* CoursesView.swift in Sources */,
 				B4483B5B2C7A72A700C56F43 /* GradeCalculator.swift in Sources */,
 				B464F5E72C822D1E008909CC /* NotificationView.swift in Sources */,
+				B464F60A2C84C292008909CC /* Date+Extension.swift in Sources */,
 				B4483B7D2C7F8BCC00C56F43 /* GetNotificationUseCase.swift in Sources */,
 				B4483BBC2C80BDC600C56F43 /* CourseSchedule.swift in Sources */,
 				B4483B4A2C7A6F3900C56F43 /* Teacher.swift in Sources */,
 				B4483B4C2C7A6F4000C56F43 /* TeacherAssistance.swift in Sources */,
 				B4483B9A2C8057C600C56F43 /* LogOutUseCase.swift in Sources */,
-				B4483BC62C80D22F00C56F43 /* CalendarDependencyPreview.swift in Sources */,
 				B464F5F32C822DB6008909CC /* DashboardViewModel.swift in Sources */,
 				B4483B552C7A714400C56F43 /* Grade.swift in Sources */,
 				B4483B532C7A70A300C56F43 /* Gradeable.swift in Sources */,
 				B4483BBA2C80B22100C56F43 /* Class.swift in Sources */,
 				B4483B672C7F741900C56F43 /* MoreView.swift in Sources */,
+				B464F60F2C84C2DD008909CC /* DateFormatStrategy.swift in Sources */,
 				B464F5EC2C822D3E008909CC /* NotificationDependencyFactoryImpl.swift in Sources */,
 				B4483BAF2C80848B00C56F43 /* CalendarDependencyFactory.swift in Sources */,
+				B464F6172C84D0B6008909CC /* TaskIdentifier.swift in Sources */,
 				B4483B7F2C7F8BDA00C56F43 /* UseCase.swift in Sources */,
 				B4483BD82C80D88800C56F43 /* NotificationModel.swift in Sources */,
+				B464F60D2C84C2AC008909CC /* DateFormatterManager.swift in Sources */,
 				B4483BAC2C8083CB00C56F43 /* CalendarView.swift in Sources */,
 				B4483B902C80534800C56F43 /* MoreDependencyFactory.swift in Sources */,
 				B4483B502C7A6F5100C56F43 /* AccountType.swift in Sources */,
+				B464F62B2C860BED008909CC /* ScheduleEventDetailView.swift in Sources */,
 				B4483B962C80548C00C56F43 /* FetchUserUseCasePreview.swift in Sources */,
-				B464F5E12C822CF5008909CC /* ClassDependencyFactory.swift in Sources */,
+				B464F62F2C86CDC8008909CC /* NotificationDetailView.swift in Sources */,
+				B464F5E12C822CF5008909CC /* CoursesDependencyFactory.swift in Sources */,
 				B4483B922C80540F00C56F43 /* MoreDependencyFactoryImpl.swift in Sources */,
+				B464F6112C84CA59008909CC /* ViewModelState.swift in Sources */,
 				B4483BDA2C80D93200C56F43 /* ScheduleEventModel.swift in Sources */,
 				B4483B712C7F79C900C56F43 /* MoreViewContent.swift in Sources */,
 				B4483B652C7F721F00C56F43 /* User.swift in Sources */,
-				B4483B942C80541D00C56F43 /* MoreDependencyFactoryPreview.swift in Sources */,
 				B4483B9C2C8057D200C56F43 /* LogOutUseCaseImpl.swift in Sources */,
 				B464F5EA2C822D33008909CC /* NotificationDependencyFactory.swift in Sources */,
+				B464F6202C84F039008909CC /* SectionableListItem.swift in Sources */,
 				B4483BC42C80D1CD00C56F43 /* CalendarDependencyFactoryImpl.swift in Sources */,
 				B4483B8B2C7FB45D00C56F43 /* DependencyContainer.swift in Sources */,
 				B4483B452C7A6EC400C56F43 /* Subject.swift in Sources */,
+				B464F61A2C84EBEF008909CC /* ListItemView.swift in Sources */,
+				B464F6272C8594A3008909CC /* DashboardContent.swift in Sources */,
+				B464F62D2C8628F3008909CC /* CourseDetailView.swift in Sources */,
 				B464F5FB2C822E8F008909CC /* DashboardDependencyFactory.swift in Sources */,
+				B464F6352C86DEFD008909CC /* GetListTeachersUseCase.swift in Sources */,
+				B464F6152C84CF1F008909CC /* PagingViewModel.swift in Sources */,
+				B464F61E2C84EE9C008909CC /* CourseViewItem.swift in Sources */,
 				B4483BDE2C80E2F300C56F43 /* ScheduleItemView.swift in Sources */,
 				B4483BD02C80D42600C56F43 /* TeacherModel.swift in Sources */,
 				B4483B5D2C7A730E00C56F43 /* Int+Extension.swift in Sources */,
@@ -822,25 +916,27 @@
 				B4483B812C7F8CD300C56F43 /* Notification.swift in Sources */,
 				B464F5FD2C822E9A008909CC /* DashboardDependencyFactoryImpl.swift in Sources */,
 				B4483BA02C80595B00C56F43 /* MainDependencyFactory.swift in Sources */,
-				B464F5E52C822D0D008909CC /* ClassDependencyFactoryPreview.swift in Sources */,
 				B4483B592C7A725800C56F43 /* Session.swift in Sources */,
 				B4483B8D2C8050AD00C56F43 /* DIFactory.swift in Sources */,
 				B4483B6C2C7F752400C56F43 /* FetchUserUseCase.swift in Sources */,
 				B46F86202C7A5ACD004F66D8 /* ContentView.swift in Sources */,
 				B4483B792C7F8B9500C56F43 /* NotificationViewModel.swift in Sources */,
 				B4483BCE2C80D33800C56F43 /* CourseModel.swift in Sources */,
-				B4483BC22C80C7F100C56F43 /* GetDashboardInfoUseCase.swift in Sources */,
+				B4483BC22C80C7F100C56F43 /* GetDashboardContentUseCase.swift in Sources */,
 				B4483BC02C80C1EF00C56F43 /* GetCourseUseCaseImpl.swift in Sources */,
 				B4483BBE2C80C1E400C56F43 /* GetCourseUseCase.swift in Sources */,
 				B4483B9E2C8057DD00C56F43 /* LogOutUseCasePreview.swift in Sources */,
+				B464F6222C84F050008909CC /* Sectionable.swift in Sources */,
 				B4483BD22C80D42C00C56F43 /* StudentModel.swift in Sources */,
 				B4483B4E2C7A6F4800C56F43 /* Student.swift in Sources */,
-				B464F5E32C822D01008909CC /* ClassDependencyFactoryImpl.swift in Sources */,
+				B464F5E32C822D01008909CC /* CoursesDependencyFactoryImpl.swift in Sources */,
 				B4483BB82C808C2000C56F43 /* GetScheduleUseCasePreview.swift in Sources */,
+				B464F6082C84C122008909CC /* NotificationItemView.swift in Sources */,
 				B46F861E2C7A5ACD004F66D8 /* EduManagerApp.swift in Sources */,
 				B4483B7B2C7F8B9F00C56F43 /* CalendarViewModel.swift in Sources */,
 				B4483BB62C808B4800C56F43 /* GetScheduleUseCaseImpl.swift in Sources */,
-				B464F5DE2C822CA8008909CC /* ClassViewModel.swift in Sources */,
+				B464F5DE2C822CA8008909CC /* CoursesViewModel.swift in Sources */,
+				B464F6292C859618008909CC /* GetDashboardContentUseCaseImpl.swift in Sources */,
 				B4483B882C7FB38900C56F43 /* FetchUserUseCaseImpl.swift in Sources */,
 				B4483B692C7F742500C56F43 /* MoreViewModel.swift in Sources */,
 			);

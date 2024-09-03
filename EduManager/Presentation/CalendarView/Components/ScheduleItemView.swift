@@ -12,45 +12,53 @@ struct ScheduleItemView: View {
     var event: ScheduleEvent
     
     var body: some View {
+        ZStack {
+            content()
+            NavigationLink {
+                ScheduleEventDetailView(event: event)
+                    .toolbar(.hidden, for: .tabBar)
+            } label: {
+                EmptyView()
+            }
+            .opacity(0)
+        }
+    }
+    
+    @ViewBuilder
+    private func content() -> some View {
         VStack(alignment: .leading, spacing: 8) {
-            Text(event.name)
-                .font(.title)
-            
+
             HStack {
-                Text("From: \(formattedTime(event.startTime))")
+                Text(event.personInChargeName)
                 Spacer()
-                Text("To: \(formattedTime(event.endTime))")
+                Text(event.startTime.format(using: .hhMM))
+                Text("-")
+                Text(event.startTime.format(using: .hhMM))
             }
             .lineLimit(1)
-            .font(.callout)
+            .font(.caption)
             
-            if let location = event.location {
-                Text(location)
-                    .font(.subheadline)
-                    .foregroundColor(.secondary)
-                
-            }
+            Text(event.name)
+
             if let description = event.description, !description.isEmpty {
                 Text(description)
                     .font(.body)
                     .foregroundColor(.secondary)
             }
+            
+            if let location = event.location {
+                Text(location)
+                    .font(.caption)
+                    .foregroundColor(.secondary)
+                
+            }
         }
-        .padding()
-        .background(Color(.systemGray6))
-        .cornerRadius(10)
-        .shadow(radius: 1)
     }
-    
-    private func formattedTime(_ date: Date) -> String {
-        let formatter = DateFormatter()
-        formatter.timeStyle = .short
-        return formatter.string(from: date)
-    }
+
 }
 
 #Preview {
-    let event = ScheduleEvent(id: "", name: "Event demo", courseId: "", startTime: Date(), endTime: Date(), location: "Home", description: "Hello")
+    let event = ScheduleEvent(id: "", name: "Event demo", courseId: "", startTime: Date(), endTime: Date(), location: "Home", description: "Hello", personInChargeName: "Tung")
     return List {
         ScheduleItemView(event: event)
         ScheduleItemView(event: event)

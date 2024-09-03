@@ -7,14 +7,15 @@
 
 import Foundation
 
-struct Course {
+struct Course: Identifiable {
     let id: String
     let name: String
     let startDate: Date
     let subject: Subject
     let endDate: Date
-    let teacher: Teacher 
+    let teacher: Teacher
     let assistances: [TeacherAssistance]
     let students: [Student]
     let enrollmentCapacity: Int
+    let enrollmentFee: Double?
 }
