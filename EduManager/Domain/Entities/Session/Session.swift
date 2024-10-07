@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+class Session {
+    
+    init(user: User) {
+        self.user = user
+    }
+    
+    let user: User
+}

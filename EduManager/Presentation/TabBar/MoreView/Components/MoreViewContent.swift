@@ -76,7 +76,7 @@ struct MoreViewContent: View {
             parentMenu()
         case .student:
             studentMenu()
-        case .unknown:
+        default:
             unknownMenu()
         }
     }

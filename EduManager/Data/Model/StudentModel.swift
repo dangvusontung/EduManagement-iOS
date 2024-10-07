@@ -8,10 +8,11 @@
 import Foundation
 import RealmSwift
 
-class StudentModel: Object {
+final class StudentModel: Object {
     @Persisted var id: String
     @Persisted var name: String
     @Persisted var dateOfBirth: String
     @Persisted var parentId: String
 }
 
+extension StudentModel: Codable {}

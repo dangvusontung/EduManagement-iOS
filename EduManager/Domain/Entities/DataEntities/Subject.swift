@@ -14,6 +14,8 @@ enum Subject: Int {
     case physic
     case chemistry
     case english
+    case biology
+    
 }
 
 extension Subject: Identifiable {

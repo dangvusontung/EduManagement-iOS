@@ -57,6 +57,14 @@ class PagingViewModel<T: Identifiable>: BaseViewModel {
         isLoadingMore = false
         self.items = loadMore ? self.items + items : items
     }
+    
+    @MainActor
+    // handle load item failed
+    func handleLoadItemsFailed(error: Error) {
+        print("Load item failed: \(error)")
+        state = .idle
+        isLoadingMore = false
+    }
 
     func resetPagination() {
         currentPage = 0
